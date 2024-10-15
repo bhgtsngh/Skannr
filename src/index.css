@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +15,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.hero-section {
+  background-image: url('assets/ph.png'); /* Add a good background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-btn {
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #FFA726; /* Accent color for hover effect */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+/* Fonts and Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Color Palette */
+.bg-primary {
+  background-color: #4CAF50;
+}
+
+.text-primary {
+  color: #4CAF50;
+}
+
+.text-accent {
+  color: #FFA726;
+}
+
+/* Clean layout with lots of white space */
+.container {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(240, 255, 255, 0.5), rgba(200, 240, 255, 0.5)); /* Modify this gradient */
+  border-radius: 10px; /* Optional for softer edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
+}
+
